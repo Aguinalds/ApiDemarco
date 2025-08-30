@@ -11,12 +11,6 @@ public class ExceptionHandlingMiddleware(RequestDelegate next, ILogger<Exception
     {
       await next(context);
     }
-    catch (ApiRequestException ex)
-    {
-      logger.LogError(ex, "API request failed.");
-      context.Response.StatusCode = (int)HttpStatusCode.BadGateway;
-      await context.Response.WriteAsJsonAsync(new { message = ex.Message });
-    }
     catch (DatabaseOperationException ex)
     {
       logger.LogError(ex, "Database operation failed.");
