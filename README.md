@@ -79,6 +79,10 @@ cd ApiDemarco.Test
 dotnet test
 ```
 
+## Mongo Express
+
+Para acessar os logs acesse http://localhost:8081 e faça o login user: 'admin' password: '1234'
+
 ## Observações
 
 Todos os serviços, incluindo banco de dados, já estão configurados no docker-compose.yml.
