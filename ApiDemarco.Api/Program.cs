@@ -18,12 +18,9 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuração de URLs
-builder.WebHost.ConfigureKestrel(serverOptions =>
-{
-    serverOptions.Listen(IPAddress.Any, 5000); 
-});
+builder.WebHost.ConfigureKestrel(serverOptions => { serverOptions.Listen(IPAddress.Any, 5000); });
 
-var mongoConn = builder.Configuration["MongoSettings:ConnectionString"]; 
+var mongoConn = builder.Configuration["MongoSettings:ConnectionString"];
 
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
@@ -52,8 +49,8 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo 
-    { 
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
         Description = @"API-DEMARCO",
     });
 });
@@ -91,18 +88,17 @@ app.UseCors("CorsPolicy");
 app.UseStaticFiles();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c => 
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiDemarco API v1");
-        c.RoutePrefix = "swagger";
-        c.InjectStylesheet("/swagger-custom/custom-swagger.css");
-        c.DefaultModelsExpandDepth(-1);
-        c.DocExpansion(DocExpansion.None);
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiDemarco API v1");
+    c.RoutePrefix = "swagger";
+    c.InjectStylesheet("/swagger-custom/custom-swagger.css");
+    c.DefaultModelsExpandDepth(-1);
+    c.DocExpansion(DocExpansion.None);
+});
+
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
