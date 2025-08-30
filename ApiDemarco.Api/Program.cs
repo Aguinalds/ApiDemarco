@@ -99,6 +99,13 @@ app.UseSwaggerUI(c =>
     c.DocExpansion(DocExpansion.None);
 });
 
+app.UseReDoc(c =>
+{
+    c.RoutePrefix = "docs";
+    c.SpecUrl = "/swagger/v1/swagger.json";
+    c.DocumentTitle = "Documentação da API Demarco";
+});
+
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 

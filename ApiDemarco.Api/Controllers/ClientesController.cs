@@ -19,8 +19,6 @@ public class ClientesController(IMediator mediator) : ControllerBase
     /// <returns>Returns a paginated list of customers.</returns>
     [HttpGet("clientes")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(Status401Payload), StatusCodes.Status401Unauthorized)]
-    [ProducesResponseType(typeof(Status403Payload), StatusCodes.Status403Forbidden)]
     [ProducesResponseType(typeof(Status404Payload), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(Status500Payload), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> GetClientes([FromQuery] PaginationParams? paginationParams = null)
@@ -40,7 +38,6 @@ public class ClientesController(IMediator mediator) : ControllerBase
     /// <returns>A response indicating the outcome of the operation. Includes status codes 201 (Created), 401 (Unauthorized), 404 (Not Found), or 500 (Internal Server Error).</returns>
     [HttpPost("clientes")]
     [ProducesResponseType(StatusCodes.Status201Created)]
-    [ProducesResponseType(typeof(Status401Payload), StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(typeof(Status404Payload), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(Status500Payload), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Create([FromBody] CreateClienteCommand createcommand)
@@ -56,7 +53,6 @@ public class ClientesController(IMediator mediator) : ControllerBase
     /// <returns>A response indicating the outcome of the operation. Includes status codes 200 (Ok), 401 (Unauthorized), 404 (Not Found), or 500 (Internal Server Error).</returns>
     [HttpPut("clientes")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(Status401Payload), StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(typeof(Status404Payload), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(Status500Payload), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Update([FromBody] UpdateClienteCommand updatecommand)
@@ -72,7 +68,6 @@ public class ClientesController(IMediator mediator) : ControllerBase
     /// <returns>A response indicating the outcome of the operation. Includes status codes 200 (Ok), 401 (Unauthorized), 404 (Not Found), or 500 (Internal Server Error).</returns>
     [HttpDelete("clientes")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(Status401Payload), StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(typeof(Status404Payload), StatusCodes.Status404NotFound)]
     [ProducesResponseType(typeof(Status500Payload), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Delete([FromBody] DeleteClienteCommand deletecommand)
