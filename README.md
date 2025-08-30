@@ -11,6 +11,8 @@ Não é necessário criar arquivos `.env` ou fazer configurações adicionais �
 - [Docker](https://www.docker.com/get-started) instalado na sua máquina
 - [Docker Compose](https://docs.docker.com/compose/install/) instalado
 - [.NET SDK 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (somente se for rodar testes)
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) (opcional, para gerenciar o SQL Server)
+- [DBeaver](https://dbeaver.io/) (opcional, para gerenciar bancos de dados como SQL Server ou MongoDB)
 
 ---
 
