@@ -66,7 +66,7 @@ dotnet test
 
 ## Observações
 
-Todos os serviços, incluindo banco de dados e o MongoDb, já estão configurados no docker-compose.yml.
+Todos os serviços, incluindo banco de dados, já estão configurados no docker-compose.yml.
 
 Não é necessário criar ou configurar variáveis de ambiente.
 
