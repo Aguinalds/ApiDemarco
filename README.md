@@ -33,13 +33,14 @@ docker-compose up -d
 docker ps
 ```
 
-- A ApiDemarco não vai subir por que o bando de dados 'demarco' não existe!
+> **Atenção:** A ApiDemarco não vai subir porque o banco de dados 'demarco' não existe!
+
 
 4. **Criar o banco de dados**
-   
-- Você pode acessar o banco de dados que está rodando no container utilizando ferramentas de gerenciamento SQL, como o DBeaver ou o SQL Server Management Studio (SSMS), e criar o banco de dados manualmente.
 
-5. **Execute o container ApiDemarco**
+> Você pode acessar o banco de dados que está rodando no container utilizando ferramentas de gerenciamento SQL, como o DBeaver ou o SQL Server Management Studio (SSMS), e criar o banco de dados manualmente.
+
+6. **Execute o container ApiDemarco**
 ```bash
 docker-compose up apidemarco.api
 ```
