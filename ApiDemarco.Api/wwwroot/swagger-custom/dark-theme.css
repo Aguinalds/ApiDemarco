@@ -1,0 +1,166 @@
+﻿/* General Background */
+body {
+    background-color: #1e1e2f;
+    color: #c7c7c7;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #eaeaea;
+}
+
+/* Menu Styles */
+.menu-content {
+    background-color: #2c2c3e;
+}
+
+.menu-content .sc-eyvILC {
+    color: #c7c7c7;
+}
+
+.menu-content .sc-bpUBKd {
+    background-color: #353546;
+    border: 1px solid #454552;
+}
+
+.menu-content .sc-bpUBKd:hover {
+    background-color: #4a4a5e;
+}
+
+.sc-dPZUQH.gHVyaI.menu-content {
+    background-color: #1e1e1e;
+}
+
+/* Highlighted Box */
+.sc-iGgWBj.sc-gsFSXq.lbpUdJ.bOFhJE {
+    background-color: #353546;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Text Colors */
+.sc-Nxspf.sc-gFAWRd.lmPAIU.iHgalF,
+.sc-jXbUNg.copjkU,
+.sc-dSIIpw.hfxGPi,
+.sc-dAlyuH.hNlDMA {
+    color: #ffffff;
+}
+
+/* Dropdowns */
+.sc-dtInlm.sc-kOPcWz.kLounG.edEekE {
+    color: #ffffff;
+}
+
+.kLounG label {
+    color: #ffffff !important;
+}
+
+.jUVzae .sc-cwHptR polygon,
+.brGIkq .sc-cwHptR polygon {
+    fill: #ffffff !important;
+}
+
+/* Search Bar */
+.search-input {
+    background-color: #353546;
+    color: #c7c7c7;
+    border: 1px solid #454552;
+}
+
+.search-input::placeholder {
+    color: #757575;
+}
+
+/* API Info Section */
+.api-content {
+    background-color: #1e1e1e;
+    color: #c7c7c7;
+}
+
+/* Tables */
+table {
+    background-color: #2c2c3e;
+    border: 1px solid #454552;
+}
+
+table tr {
+    border-bottom: 1px solid #454552;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table td {
+    color: #c7c7c7;
+    padding: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #4a4a5e;
+    color: #c7c7c7;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #57576e;
+}
+
+/* Links */
+a {
+    color: #5ab4f3;
+}
+
+a:hover {
+    color: #4b94d9;
+}
+
+/* Code Blocks */
+code {
+    background-color: #2a2a3d;
+    color: #c7c7c7;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Scrollbars */
+.ps__rail-x, .ps__rail-y {
+    background-color: #2c2c3e;
+}
+
+.ps__thumb-x, .ps__thumb-y {
+    background-color: #4a4a5e;
+}
+
+/* Footer */
+.sc-gfoqjT {
+    background-color: #1e1e2f;
+    color: #757575;
+}
+
+/* Interactive States */
+.IXiyX .sc-bpUBKd:hover,
+.IXiyX .sc-bpUBKd.active {
+    background-color: #4a4a5e !important;
+}
+
+.IXiyX {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+/* Specific Overrides */
+.cyjaQV,
+.jAREBv {
+    color: #ffffff !important;
+}
+
+.eRWFOW path {
+    fill: #ffffff !important;
+}
+.sc-Nxspf.sc-fxwrCY.lmPAIU.jExHJM{
+    color: #ffffff !important;
+}

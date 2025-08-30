@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentMigrator" Version="7.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.19" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.19" />
+      <PackageReference Include="MongoDB.Driver" Version="3.4.3" />
+      <PackageReference Include="Serilog" Version="4.3.1-dev-02373" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ApiDemarco.Application\ApiDemarco.Application.csproj" />
+      <ProjectReference Include="..\ApiDemarco.Domain\ApiDemarco.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
