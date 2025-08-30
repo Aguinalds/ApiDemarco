@@ -7,6 +7,7 @@ Não é necessário criar arquivos `.env` ou fazer configurações adicionais �
 
 ## Pré-requisitos
 
+- [Git](https://git-scm.com/) instalado na sua máquina
 - [Docker](https://www.docker.com/get-started) instalado na sua máquina
 - [Docker Compose](https://docs.docker.com/compose/install/) instalado
 - [.NET SDK 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (somente se for rodar testes)
