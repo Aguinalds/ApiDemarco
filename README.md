@@ -83,6 +83,8 @@ dotnet test
 
 Para acessar os logs acesse http://localhost:8081 e faça o login user: 'admin' password: '1234'
 
+> Existem dois tipos de logs: logsApplication, que contém todos os logs gerados pela API, e logs, que registra especificamente os logs relacionados aos clientes.
+
 ## Observações
 
 Todos os serviços, incluindo banco de dados, já estão configurados no docker-compose.yml.
