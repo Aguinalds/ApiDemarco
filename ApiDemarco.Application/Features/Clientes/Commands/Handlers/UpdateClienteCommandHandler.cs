@@ -21,8 +21,10 @@ public class UpdateClienteCommandHandler(IClienteWriteRepository clienteWriteRep
         
         var emailExists = await clienteReadRepository.GetByEmailAsync(request.Email);
 
-        if (emailExists != null)
+        if (emailExists != null && emailExists.Id != request.Id)
+        {
             throw new ClientesException.EmailExistErrorException();
+        }
         
         var cliente = new Cliente()
         {
