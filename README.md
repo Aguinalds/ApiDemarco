@@ -44,7 +44,7 @@ docker ps
 
 6. **Execute o container ApiDemarco**
 ```bash
-docker-compose up apidemarco.api
+docker-compose up apidemarco.api -d
 ```
 
 6. **Acesse a API**
